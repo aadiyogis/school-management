@@ -1,0 +1,13 @@
+.idea
+*.iml
+build
+out
+.classpath
+.project
+.settings
+bin
+target
+.checkstyle
+
+.DS_Store
+Desktop.ini

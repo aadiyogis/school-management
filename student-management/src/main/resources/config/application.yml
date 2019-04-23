@@ -1,0 +1,26 @@
+server:
+   port: 8000
+   servlet:
+      context-path: /srims/ui
+spring:
+   datasource:
+      url: jdbc:oracle:thin:@//localhost:1521/pdborcl2.iuser.iroot.adidom.com
+      username: srims
+      password: srims
+      driver-class-name: oracle.jdbc.OracleDriver
+   jpa:
+      database: ORACLE
+      generate-ddl: true
+      show-sql: true
+      open-in-view: false
+      hibernate:
+         ddl-auto: none
+         naming:
+            implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+            physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      properties:
+         hibernate.dialect: org.hibernate.dialect.Oracle12cDialect
+         hibernate.hbm2ddl.auto: none
+         hibernate.show_sql: true
+         hibernate.format_sql: true
+         hibernate.generate_statistics: false
